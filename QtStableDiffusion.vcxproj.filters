@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="窗体">
+      <UniqueIdentifier>{19f2e27b-0ca1-4446-b400-75a6b2ee22a7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="窗体\main">
+      <UniqueIdentifier>{574bd7f0-d63f-4163-9b86-eb4205d70b57}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>qrc;rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="启动源代码">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>qml;cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="函数实现">
+      <UniqueIdentifier>{0ac257b7-4b3d-4b45-8416-dcc1c5fa90b5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="函数实现\json解析器">
+      <UniqueIdentifier>{e6b908ed-a98a-4db4-adec-af5987662537}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="函数实现\其他">
+      <UniqueIdentifier>{3505bb4b-a80c-44d0-9b91-edccf1b7bf44}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="其他文件">
+      <UniqueIdentifier>{7d7a9e7c-f0a4-4f36-9036-8efe0b28496a}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <QtRcc Include="QtStableDiffusion.qrc">
+      <Filter>资源文件</Filter>
+    </QtRcc>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="QtStableDiffusion.cpp">
+      <Filter>窗体\main</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>启动源代码</Filter>
+    </ClCompile>
+    <ClCompile Include="JsonOperator.cpp">
+      <Filter>函数实现\json解析器</Filter>
+    </ClCompile>
+    <ClCompile Include="OtherFunction.cpp">
+      <Filter>函数实现\其他</Filter>
+    </ClCompile>
+    <ClCompile Include="HttpOperator.cpp">
+      <Filter>函数实现\其他</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="QtStableDiffusion.h">
+      <Filter>窗体\main</Filter>
+    </QtMoc>
+  </ItemGroup>
+  <ItemGroup>
+    <QtUic Include="QtStableDiffusion.ui">
+      <Filter>窗体\main</Filter>
+    </QtUic>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="JsonOperator.h">
+      <Filter>函数实现\json解析器</Filter>
+    </ClInclude>
+    <ClInclude Include="OtherFunction.h">
+      <Filter>函数实现\其他</Filter>
+    </ClInclude>
+    <ClInclude Include="HttpOperator.h">
+      <Filter>函数实现\其他</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="Timer.h">
+      <Filter>函数实现\其他</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="icon.rc">
+      <Filter>资源文件</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="icon1.ico">
+      <Filter>资源文件</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="qss1.qss">
+      <Filter>其他文件</Filter>
+    </None>
+    <None Include="simple.qss">
+      <Filter>其他文件</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="version.ini">
+      <Filter>其他文件</Filter>
+    </Text>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,20 @@
+<RCC>
+    <qresource prefix="/start/splash">
+        <file>img/Rounded_splash_1.png</file>
+        <file>img/Rounded_splash_2.png</file>
+        <file>img/Rounded_splash_3.png</file>
+        <file>img/Rounded_splash_4.png</file>
+        <file>img/Rounded_splash_5.png</file>
+    </qresource>
+    <qresource prefix="/icon">
+        <file>img/handinputBundle.ico</file>
+    </qresource>
+    <qresource prefix="/qss">
+        <file>simple.qss</file>
+        <file>qss1.qss</file>
+        <file>img/down-arrow.png</file>
+    </qresource>
+    <qresource prefix="/ini">
+        <file>version.ini</file>
+    </qresource>
+</RCC>
