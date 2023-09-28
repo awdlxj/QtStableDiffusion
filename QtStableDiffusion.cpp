@@ -58,14 +58,6 @@ QtStableDiffusion::~QtStableDiffusion()
 
 }
 
-//void QtStableDiffusion::curl_run(QString url, QString* res)
-//{
-//
-//    //CurlThread* curlt = new CurlThread(url, res, &ping);
-//    //curlt->start();
-//
-//}
-
 void QtStableDiffusion::connect_false(QString errmsg)
 {
     ui.label_4->setText("-- ms");

@@ -37,7 +37,7 @@ int HO_get(const std::string &address, std::string& result)
         curl_easy_setopt(curl, CURLOPT_HTTPHEADER, headers);
 
         //设置等待时间
-        curl_easy_setopt(curl, CURLOPT_TIMEOUT, 2);
+        curl_easy_setopt(curl, CURLOPT_TIMEOUT, 1);
 
         // 设置响应数据的处理函数
         curl_easy_setopt(curl, CURLOPT_WRITEFUNCTION, WriteCallback);
