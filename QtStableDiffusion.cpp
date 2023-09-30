@@ -70,17 +70,17 @@ void QtStableDiffusion::connect_false(QString errmsg)
     ui.comboBox_2->clear();
 }
 
-void QtStableDiffusion::on_horizontalSlider_sliderMoved(int position)
+void QtStableDiffusion::on_horizontalSlider_valueChanged(int position)
 {
     ui.label_11->setText(QString::number(position));
 }
 
-void QtStableDiffusion::on_horizontalSlider_2_sliderMoved(int position)
+void QtStableDiffusion::on_horizontalSlider_2_valueChanged(int position)
 {
     ui.label_16->setText(QString::number(position / 2.0f));
 }
 
-void QtStableDiffusion::on_horizontalSlider_3_sliderMoved(int position)
+void QtStableDiffusion::on_horizontalSlider_3_valueChanged(int position)
 {
     ui.label_26->setText(QString::fromStdString(formatDoubleToDecimalPlaces(position / 100.0, 2)));
 }
@@ -352,8 +352,8 @@ void QtStableDiffusion::on_pushButton_11_clicked()
     ui.comboBox->setCurrentText(settings.value("General/SampleMethod").toString());
     ui.horizontalSlider->setSliderPosition(settings.value("General/Steps").toInt());
     ui.horizontalSlider_2->setSliderPosition(settings.value("General/CFG").toFloat() * 2);
-    on_horizontalSlider_sliderMoved(ui.horizontalSlider->sliderPosition());
-    on_horizontalSlider_2_sliderMoved(ui.horizontalSlider_2->sliderPosition());
+    on_horizontalSlider_valueChanged(ui.horizontalSlider->sliderPosition());
+    on_horizontalSlider_2_valueChanged(ui.horizontalSlider_2->sliderPosition());
 
     ui.spinBox->setValue(settings.value("General/Hight").toInt());
     ui.spinBox_2->setValue(settings.value("General/Width").toInt());
